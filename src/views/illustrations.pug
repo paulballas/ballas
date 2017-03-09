@@ -1,0 +1,22 @@
+extends layout
+
+block settings
+  - var page = 'Illustrations'
+  - var classes = ['illustrations', 'dark']
+
+block content
+  - var comics = [{url: "big-wheel"},{url: "cat-rollerskate"},{url: "catronaut"},{url: "coffee-poop"}, {url: "hipster-yorkshire"}, {url: "kool-aid"}, {url: "merica"}, {url: "road-hound"}, {url: "toilet-paper"}, {url: "trump-cat"}]
+
+  .bg-navy
+    .container
+      .p-t-xs-4
+        .row
+          .col-xs-12
+            h3 Illustrations
+        .space-1
+        .row
+          each comic, index in comics
+            .col-md-6.col-xs-12
+              .ill-body
+                - var url = comic.url
+                img(src='/public/images/illustrations/' + url + '.png' alt= url data-action='zoom' data-original='/public/images/illustrations/' + url + '.png')

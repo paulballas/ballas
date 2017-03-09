@@ -1,13 +1,15 @@
 extends layout
 
 block settings
-  - var slug = "home"
-  - var page = "Home"
+  - var page = 'Home'
+  - var classes = ['home', 'light']
 
 block content
-  .bg-purple
-    .container
-      .row
-        .col-md-6.col-xs-12
-          h2 Creating beautiful, usable and simple experiences.
-          h5 All day. Err day.
+  .bg-navy.home-body
+    .home-container
+      .container
+        .row
+          .col-xs-12
+            .p-t-xs-8.hero
+              h2.type-geb Making the web beautiful.
+              h3.uppercase all day. every day.

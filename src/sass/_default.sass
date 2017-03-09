@@ -1,14 +1,73 @@
-.bg-purple
-  background: $purple
 .bg-navy
   background: $navy
-.bg-blue
-  background: $blue
-.bg-gray
-  background: $gray
+.bg-lightblue
+  background: $lightblue
+.bg-aqua
+  background: $aqua
 .bg-white
   background: $white
+.bg-lightgray
+  background: $lightgray
+.bg-darkgray
+  background: $darkgray
 
+.btn-default,
+input[type=button],
+input[type=submit]
+  &.btn-navy
+    background: $navy
+    border-color: $navy
+    &:hover
+      background: darken($navy, 10%)
+      border-color: darken($navy, 10%)
+  &.btn-lightblue
+    background: $lightblue
+    border-color: $lightblue
+    &:hover
+      background: darken($lightblue, 10%)
+      border-color: darken($lightblue, 10%)
+  &.btn-aqua
+    background: $aqua
+    border-color: $aqua
+    &:hover
+      background: darken($aqua, 10%)
+      border-color: darken($aqua, 10%)
+  &.btn-white
+    background: $white
+    border-color: $white
+    &:hover
+      background: darken($white, 10%)
+      border-color: darken($white, 10%)
+  &.btn-lightgray
+    background: $lightgray
+    border-color: $lightgray
+    &:hover
+      background: darken($lightgray, 10%)
+      border-color: darken($lightgray, 10%)
+  &.btn-darkgray
+    background: $darkgray
+    border-color: $darkgray
+    &:hover
+      background: darken($darkgray, 10%)
+      border-color: darken($darkgray, 10%)
 
-h1, h2, h3, h4, h5, h6, p, span, b
+.type-navy
   color: $navy
+.type-lightblue
+  color: $lightblue
+.type-aqua
+  color: $aqua
+.type-white
+  color: $white
+.type-lightgray
+  color: $lightgray
+.type-darkgray
+  color: $darkgray
+.type-black
+  color: $black
+
+.divider
+  display: block
+  width: 100%
+  height: ms(-6)
+  background: $lightblue

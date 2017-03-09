@@ -1,0 +1,32 @@
+extends layout
+
+block settings
+  - var page = 'Contact'
+  - var classes = ['contact', 'dark']
+
+block content
+  .bg-lightblue
+    .container
+      .p-t-xs-6.p-b-xs-6
+        .form-body
+          .row
+            .col-xs-12
+              h2.type-geb Say hello!
+          .space-2
+          form(data-location='contact')
+            .row
+              .col-xs-12.col-md-6
+                .form-item
+                  label Name
+                  input(type='text' placeholder='George Costanza' name='firstName' class='form-control')
+              .col-xs-12.col-md-6
+                .form-item
+                  label Email
+                  input(type='email' placeholder='george@email.com' name='email' class='form-control')
+              .col-xs-12
+                .form-item
+                  label Message
+                  input(type='text' placeholder='Summer of George!' name='message' class='form-control')
+              .col-xs-12
+                .form-item
+                  input(type='submit' value='Submit' class='btn-large btn-default btn-navy m-b-xs-0')

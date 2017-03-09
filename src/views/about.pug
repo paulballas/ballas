@@ -1,0 +1,140 @@
+extends layout
+
+block settings
+  - var page = 'About'
+  - var classes = ['about', 'dark']
+
+block content
+  //- .bg-lightgray.about-body
+  //-   .container
+  //-     .p-t-xs-6.p-b-xs-4.hero
+  //-       .row.middle-xs
+  //-         .col-md-3.col-xs-12
+  //-           img.m-b-md-0.m-b-xs-1(src='/public/images/paul_headshot.jpg' alt='Paul Ballas')
+  //-         .col-md-9.col-xs-12
+  //-           .p-l-md-1.p-l-xs-0.center-text-xs.left-text-md
+  //-             h2.type-geb Hi, I'm Paul.
+  //-             .divider.m-b-xs-1
+  //-             h3 I'm a designer living in Denver, CO with my wife, dog, and cat.
+  //-   .container
+  //-     .p-t-xs-2.p-b-xs-2
+  //-       .row.about-roles.middle-xs
+  //-         .col-md-3.col-xs-12.center-text-xs.m-b-xs-2.m-b-md-0
+  //-           img(src='/public/images/pana.png' alt='Pana')
+  //-           .space-1
+  //-           p.type-black Pana
+  //-             br
+  //-             b.type-gs Head of Product
+  //-         .col-md-3.col-xs-12.center-text-xs.m-b-xs-2.m-b-md-0
+  //-           img(src='/public/images/general-assembly.png' alt='General Assembly')
+  //-           .space-1
+  //-           p.type-black General Assembly
+  //-             br
+  //-             b.type-gs Instructor
+  //-         .col-md-3.col-xs-12.center-text-xs.m-b-xs-2.m-b-md-0
+  //-           img(src='/public/images/1776-logo.png' alt='1776')
+  //-           .space-1
+  //-           p.type-black 1776
+  //-             br
+  //-             b.type-gs Mentor
+  //-         .col-md-3.col-xs-12.center-text-xs.m-b-xs-2.m-b-md-0
+  //-             img(src='/public/images/galvanize.png' alt='Galvanize')
+  //-             .space-1
+  //-             p.type-black Galvanize
+  //-               br
+  //-               b.type-gs Mentor
+  .bg-navy
+    .container.about-hero
+      .p-t-xs-6.p-b-xs-6
+        .row.middle-xs
+          .col-md-6.col-xs-12
+            h2 Hey there!
+            p I'm Paul, a designer living in Colorado with his wife, dog and cat.
+          .col-md-6.col-xs-12
+            img(src='/public/images/about/paul-emily.jpg' alt='Paul and Emily')
+
+            p.small.m-t-xs-1.m-b-xs-0 Still working on looking into the camera.
+  .bg-lightgray
+    .container
+      .p-t-xs-2.p-b-xs-2
+        .row
+          .col-xs-12.center-text-xs.center-xs
+            h3.type-navy.type-gm A brief history of my internet experience.
+    //- aol
+    .container
+      .row
+        .col-md-5.col-xs-12
+          .time-container
+            img(src='/public/images/about/aol.png' alt='aol')
+            h3.m-b-md-0.type-geb 1994
+            p.m-b-xs-0 Convinces parents to install AOL. Surfs the internet for hours.
+            .carrot
+            .node
+        .col-md-1
+          .timeline
+        .col-md-5.col-xs-12
+    //- angelfire
+    .container
+      .row
+        .col-md-5.col-xs-12
+        .col-md-1
+          .timeline
+        .col-md-5.col-xs-12
+          .time-container
+            img(src='/public/images/about/angelfire.png' alt='angelfire' class='br')
+            h3.m-b-md-0.type-geb 1996
+            p.m-b-xs-0 Creates first website on Anglefire. South Park fan site with only links.
+            .carrot.right
+            .node.right
+    //- napster
+    .container
+      .row
+        .col-md-5.col-xs-12
+          .time-container
+            img(src='/public/images/about/napster.png' alt='napster')
+            h3.m-b-md-0.type-geb 2000
+            p.m-b-xs-0 Only kid in the neighborhood with a fast enough internet connection to download music from Napster.
+            .carrot
+            .node
+        .col-md-1
+          .timeline
+        .col-md-5.col-xs-12
+    //- hellowallet
+    .container
+      .row
+        .col-md-5.col-xs-12
+        .col-md-1
+          .timeline
+        .col-md-5.col-xs-12
+          .time-container
+            img(src='/public/images/about/hellowallet.png' alt='HelloWallet' class='xl')
+            h3.m-b-md-0.type-geb 2010
+            p.m-b-xs-0 Lands first job at internet startup HelloWallet. Eventually transitions into Head of UX. HelloWallet acquired after 4 years for $50M.
+            .carrot.right
+            .node.right
+    //- DD
+    .container
+      .row
+        .col-md-5.col-xs-12
+          .time-container
+            img(src='/public/images/about/dd.png' alt='dd' class='br')
+            h3.m-b-md-0.type-geb 2013
+            p.m-b-xs-0 Joins Deloitte Digital at Lead UX Designer & Front-End Engineer. Earns lots of SouthWest airline miles.
+            .carrot
+            .node
+        .col-md-1
+          .timeline
+        .col-md-5.col-xs-12
+    //- hellowallet
+    .container
+      .row
+        .col-md-5.col-xs-12
+        .col-md-1
+          .timeline
+        .col-md-5.col-xs-12
+          .time-container
+            img(src='/public/images/pana.png' alt='pana' class='lrg')
+            h3.m-b-md-0.type-geb 2015
+            p.m-b-xs-0 Heads back to the startup world as Head of Product at Pana.
+            .carrot.right
+            .node.right

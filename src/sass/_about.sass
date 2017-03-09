@@ -1,0 +1,101 @@
+.about
+  // .about-body
+  //   display: block
+  //   border-bottom: ms(-8) solid $white
+  //   min-height: ms(15)
+  // .hero
+  //   *
+  //     color: $navy
+  //   img
+  //     display: block
+  //     width: 100%
+  //     height: auto
+  //     border: ms(-6) solid $white
+  //     border-radius: 100%
+  // .about-roles
+  //   svg
+  //     width: 100%
+  //     display: block
+  //   img
+  //     width: 100%
+  //     max-width: ms(9)
+  //     height: auto
+  //     display: block
+  //     text-align: center
+  //     margin: 0 auto
+  //   b
+  //     color: inherit
+  .about-hero
+    img
+      display: block
+      margin: 0 auto
+      width: 100%
+      border: ms(-8) solid $lightgray
+      border-radius: 6px
+
+  .timeline
+    width: ms(-6)
+    height: 100%
+    min-height: ms(13)
+    background: $navy
+    margin: 0 auto
+    display: none
+    +target(md)
+      display: block
+  .time-container
+    display: block
+    background: $white
+    border: ms(-8) solid $darkgray
+    border-radius: 3px
+    padding: ms(1)
+    position: relative
+    *
+      color: $navy
+    margin-top: ms(2)
+    margin-bottom: ms(2)
+    +target(md)
+      margin-top: ms(6)
+      margin-bottom: ms(6)
+    img
+      display: block
+      width: ms(8)
+      height: auto
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: ms(-2)
+      &.br
+        border-radius: 6px
+      &.lrg
+        width: ms(9)
+      &.xl
+        width: ms(10)
+    .carrot
+      width: 0
+      height: 0
+      border-top: 5px solid transparent
+      border-left: 10px solid $darkgray
+      border-bottom: 5px solid transparent
+      position: absolute
+      top: 53%
+      right: - ms(-2)
+      display: none
+      +target(md)
+        display: block
+      &.right
+        left: - ms(-2)
+        border-right: 10px solid $darkgray
+        border-left: 0
+    .node
+      width: ms(0)
+      height: ms(0)
+      background: $navy
+      border: ms(-8) solid $lightgray
+      border-radius: 100%
+      position: absolute
+      top: 50%
+      left: 113%
+      display: none
+      +target(md)
+        display: block
+      &.right
+        left: - 19%

@@ -5,6 +5,7 @@ var gulp = require('gulp'),
   sass = require('gulp-sass');
   coffee = require('gulp-coffee');
   uglify = require('gulp-uglify');
+  changed = require('gulp-changed')
 
 gulp.task('sass', function () {
   gulp.src('./src/sass/*.{sass,scss}')
@@ -46,7 +47,20 @@ gulp.task('coffee', function() {
     .pipe(gulp.dest('./build/js'));
 });
 
+gulp.task('public', function() {
+  gulp.src('./src/public/**/*.*')
+    .pipe(gulp.dest('./build/public'));
+});
+
+gulp.task('brand', function() {
+  gulp.src('./src/brand/*.*')
+    .pipe(gulp.dest('./build'));
+});
+
+
 gulp.task('default', [
+  'public',
+  'brand',
   'sass',
   'develop',
   'coffee',
