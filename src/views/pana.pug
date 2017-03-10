@@ -1,0 +1,80 @@
+extends layout
+
+block settings
+  - var page = 'Pana'
+  - var classes = ['portfolio', 'dark']
+
+block content
+  .project
+    .bg-darkmagenta
+      .container.hero.pana-hero
+        .padify
+          .row
+            .col-xs-12
+              a(href='/portfolio' class='btn-default btn-lightmagenta m-b-xs-0') Back to portfolio
+          .row.middle-xs
+            .col-md-7.col-xs-12
+              h2.type-geb #{title}
+              h3 As the Head of Product at Pana, I lead all design effots for our web and mobile product suite.
+              p.type-gs Some of my daily fun:
+                ul
+                  li Research and customer discovery.
+                  li Feedback calls and meetings with customers.
+                  li Creating wires and mocks for new features or ideas.
+                  li Managing our sprint process... we use ProductBoard.
+                  li Writing front-end code.
+                  li Ideating into the wee hours of the evening.                
+            .col-md-5
+              .phone-static
+                img(src='/public/images/portfolio/p-chat.png' alt='Pana Chat')
+              .phone-video
+                img(src='/public/images/portfolio/iphone.png' alt='iPhone')
+                video(autoplay loop)
+                  source(src='/public/videos/hero.mp4')
+                  source(src='/public/videos/hero.webm')
+    //- agent
+    .bg-lightmagenta
+      .container.proj-deets
+        .padify
+          .row.middle-xs
+            .col-md-5.col-xs-12
+              h3.type-darkmagenta Agent & research app.
+              p.type-darkmagenta Pana has agents and researchers based all over the world. Our agent app allows them to communicate and interact with our customers.
+            .col-md-7.col-xs-12
+              img(src='/public/images/portfolio/agent.png' alt='agent')
+    //- mobile
+    .bg-urple
+      .container.proj-deets
+        .padify
+          .row.middle-xs
+            .col-xs-12
+              h3.type-darkmagenta Mobile app.
+              p.type-darkmagenta Pana has agents and researchers based all over the world. Our agent app allows them to communicate and interact with our customers.
+            .col-md-4.col-xs-12
+              img(src='/public/images/portfolio/itinerary-wire.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs Initial idea
+            .col-md-4.col-xs-12
+              img(src='/public/images/portfolio/itinerary-wire2.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs A few iterations later
+            .col-md-4.col-xs-12
+              img(src='/public/images/portfolio/itinerary-final.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs Final product
+    //- pana web
+    .bg-darkurple
+      .container.proj-deets
+        .padify
+          .row.middle-xs          
+            .col-md-7.col-xs-12
+              img(src='/public/images/portfolio/p-web.png' alt='web')
+            .col-md-5.col-xs-12
+              h3.type-white Web app.
+              p.type-white Pana web provides an additional outlet for our members as well as functionality to support the travel for entire company.
+    //- summary
+    .bg-darkmagenta
+      .container.proj-deets
+        .padify
+          .row
+            .col-xs-12.center-text-xs
+              +globeAir
+              .space-1
+              h4 Pana supports the travel for thousands of members across hundreds of companies. As the Head of Product every day is met with a variety of unique challenges. Pana's consumer and business products are truly making travel delightful again.

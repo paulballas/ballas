@@ -1,0 +1,68 @@
+extends layout
+
+block settings
+  - var page = 'Class'
+  - var classes = ['portfolio', 'dark']
+
+block content
+  .project
+    .bg-darkmagenta
+      .container.hero.pana-hero
+        .padify
+          .row
+            .col-xs-12
+              a(href='/portfolio' class='btn-default btn-lightmagenta m-b-xs-0') Back to portfolio
+          .row.middle-xs
+            .col-md-7.col-xs-12
+              h2.type-geb #{title}
+              h3 Lead UX and visual designer for the ClassScout mobile app.
+              p.type-gs A few of my activities:
+                ul
+                  li Client discovery and customer research.
+                  li Created wires, mockups and journey maps.
+                  li Designed the mobile and web experience.
+                  li Created a mobile animation video... that one →
+            .col-md-5
+              .phone-static
+                img(src='/public/images/portfolio/cs-tracker.png' alt='Pana Chat')
+              .phone-video
+                img(src='/public/images/portfolio/iphone.png' alt='iPhone')
+                video(autoplay loop)
+                  source(src='/public/videos/classscout.mp4')
+                  source(src='/public/videos/classscout.webm')
+    //- mobile
+    .bg-urple
+      .container.proj-deets
+        .padify
+          .row.middle-xs
+            .col-xs-12
+              h3.type-darkmagenta Mobile app for teachers.
+              p.type-darkmagenta The ClassScout mobile app enables teachers to track behaviors of their students with just one swipe, so they can get back to their students.
+            .col-md-4.col-xs-12
+              img(src='/public/images/portfolio/cs-1.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs Track behavior
+            .col-md-4.col-xs-12
+              img(src='/public/images/portfolio/cs-2.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs Student insights
+            .col-md-4.col-xs-12
+              img(src='/public/images/portfolio/cs-3.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs Admin settings
+    //- pana web
+    .bg-darkurple
+      .container.proj-deets
+        .padify
+          .row.middle-xs          
+            .col-md-7.col-xs-12
+              img(src='/public/images/portfolio/cs-web.png' alt='web')
+            .col-md-5.col-xs-12
+              h3.type-white Web version for teachers and administrators.
+              p.type-white The web version allows teachers to also manage their students on their desktop. In addition, principals and administrators can manage multiple teachers and schools.
+    //- summary
+    .bg-darkmagenta
+      .container.proj-deets
+        .padify
+          .row
+            .col-xs-12.center-text-xs
+              +pencil
+              .space-1
+              h4 ClassScout helps teachers and school leaders track, analyze, and share progress on student behaviors. With a mobile and desktop application, it’s always accessible.

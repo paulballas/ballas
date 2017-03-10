@@ -1,30 +1,4 @@
 .about
-  // .about-body
-  //   display: block
-  //   border-bottom: ms(-8) solid $white
-  //   min-height: ms(15)
-  // .hero
-  //   *
-  //     color: $navy
-  //   img
-  //     display: block
-  //     width: 100%
-  //     height: auto
-  //     border: ms(-6) solid $white
-  //     border-radius: 100%
-  // .about-roles
-  //   svg
-  //     width: 100%
-  //     display: block
-  //   img
-  //     width: 100%
-  //     max-width: ms(9)
-  //     height: auto
-  //     display: block
-  //     text-align: center
-  //     margin: 0 auto
-  //   b
-  //     color: inherit
   .about-hero
     img
       display: block
@@ -32,12 +6,11 @@
       width: 100%
       border: ms(-8) solid $lightgray
       border-radius: 6px
-
   .timeline
     width: ms(-6)
     height: 100%
     min-height: ms(13)
-    background: $navy
+    background: $darkmagenta
     margin: 0 auto
     display: none
     +target(md)
@@ -45,12 +18,12 @@
   .time-container
     display: block
     background: $white
-    border: ms(-8) solid $darkgray
+    border: ms(-8) solid $darkurple
     border-radius: 3px
     padding: ms(1)
     position: relative
     *
-      color: $navy
+      color: $darkmagenta
     margin-top: ms(2)
     margin-bottom: ms(2)
     +target(md)
@@ -72,24 +45,24 @@
     .carrot
       width: 0
       height: 0
-      border-top: 5px solid transparent
-      border-left: 10px solid $darkgray
-      border-bottom: 5px solid transparent
+      border-top: 10px solid transparent
+      border-left: 20px solid $darkurple
+      border-bottom: 10px solid transparent
       position: absolute
-      top: 53%
-      right: - ms(-2)
+      top: 51%
+      right: - ms(1)
       display: none
       +target(md)
         display: block
       &.right
-        left: - ms(-2)
-        border-right: 10px solid $darkgray
+        left: - ms(1)
+        border-right: 20px solid $darkurple
         border-left: 0
     .node
       width: ms(0)
       height: ms(0)
-      background: $navy
-      border: ms(-8) solid $lightgray
+      background: $darkmagenta
+      border: ms(-8) solid $urple
       border-radius: 100%
       position: absolute
       top: 50%

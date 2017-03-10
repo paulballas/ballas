@@ -1,3 +1,7 @@
+.padify
+  padding-top: ms(4)
+  padding-bottom: ms(4)
+
 .bg-navy
   background: $navy
 .bg-lightblue
@@ -10,46 +14,39 @@
   background: $lightgray
 .bg-darkgray
   background: $darkgray
+.bg-urple
+  background: $urple
+.bg-darkurple
+  background: $darkurple
+.bg-lightmagenta
+  background: $lightmagenta
+.bg-magenta
+  background: $magenta
+.bg-darkmagenta
+  background: $darkmagenta
 
 .btn-default,
 input[type=button],
 input[type=submit]
-  &.btn-navy
-    background: $navy
-    border-color: $navy
+  &.btn-lightmagenta
+    background: $lightmagenta
+    border-color: $lightmagenta
+    color: $darkmagenta
     &:hover
-      background: darken($navy, 10%)
-      border-color: darken($navy, 10%)
-  &.btn-lightblue
-    background: $lightblue
-    border-color: $lightblue
+      background: darken($lightmagenta, 10%)
+      border-color: darken($lightmagenta, 10%)
+  &.btn-magenta
+    background: $magenta
+    border-color: $magenta
     &:hover
-      background: darken($lightblue, 10%)
-      border-color: darken($lightblue, 10%)
-  &.btn-aqua
-    background: $aqua
-    border-color: $aqua
+      background: darken($magenta, 10%)
+      border-color: darken($magenta, 10%)
+  &.btn-darkmagenta
+    background: $darkmagenta
+    border-color: $darkmagenta
     &:hover
-      background: darken($aqua, 10%)
-      border-color: darken($aqua, 10%)
-  &.btn-white
-    background: $white
-    border-color: $white
-    &:hover
-      background: darken($white, 10%)
-      border-color: darken($white, 10%)
-  &.btn-lightgray
-    background: $lightgray
-    border-color: $lightgray
-    &:hover
-      background: darken($lightgray, 10%)
-      border-color: darken($lightgray, 10%)
-  &.btn-darkgray
-    background: $darkgray
-    border-color: $darkgray
-    &:hover
-      background: darken($darkgray, 10%)
-      border-color: darken($darkgray, 10%)
+      background: darken($darkmagenta, 10%)
+      border-color: darken($darkmagenta, 10%)
 
 .type-navy
   color: $navy
@@ -65,9 +62,29 @@ input[type=submit]
   color: $darkgray
 .type-black
   color: $black
+.type-urple
+  color: $urple
+.type-darkurple
+  color: $darkurple
+.type-magenta
+  color: $magenta
+.type-darkmagenta
+  color: $darkmagenta
 
 .divider
   display: block
   width: 100%
   height: ms(-6)
   background: $lightblue
+
+.form-item
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=search],
+  input[type=url],
+  input[type=tel],
+  input[type=number],
+  textarea,
+  select,
+    color: $darkmagenta

@@ -1,7 +1,7 @@
 {
-  "name": "bellwether-marketing",
+  "name": "Paul Ballas",
   "version": "0.0.1",
-  "description": "bellwether coffee marketing website",
+  "description": "Paul Ballas Designer of Awesome",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -29,5 +29,8 @@
     "gulp-plumber": "^1.0.0",
     "gulp-sass": "^2.0.4",
     "standard": "git+https://github.com/tivonaporter/standard.git"
+  },
+  "engines": {
+    "node": "6.9.x"
   }
 }

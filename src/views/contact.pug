@@ -5,7 +5,7 @@ block settings
   - var classes = ['contact', 'dark']
 
 block content
-  .bg-lightblue
+  .bg-urple
     .container
       .p-t-xs-6.p-b-xs-6
         .form-body
@@ -13,7 +13,7 @@ block content
             .col-xs-12
               h2.type-geb Say hello!
           .space-2
-          form(data-location='contact')
+          form(data-location='contact' action='https://formspree.io/paul.ballas@gmail.com' method='POST')
             .row
               .col-xs-12.col-md-6
                 .form-item
@@ -29,4 +29,4 @@ block content
                   input(type='text' placeholder='Summer of George!' name='message' class='form-control')
               .col-xs-12
                 .form-item
-                  input(type='submit' value='Submit' class='btn-large btn-default btn-navy m-b-xs-0')
+                  input(type='submit' value='Submit' class='btn-large btn-default btn-magenta m-b-xs-0')

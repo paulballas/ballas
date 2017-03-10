@@ -1,5 +1,4 @@
 include mixins.pug
-- var title = 'Paul Ballas'
 
 block settings
   - var page = 'Hello'
@@ -10,7 +9,10 @@ html(lang='en' class= classes data-page= page )
   head
     meta(charset='UTF-8')
     meta( content="width=device-width, user-scalable=no", name="viewport" )
-    meta( name="description", content="Bellwether coffee")
+    meta( name="description", content="Paul Ballas")
+      
+    meta(name="robots" content="noindex")
+    meta(name="googlebot" content="noindex")      
 
     meta( property="og:title", content="Paul Ballas" )
     meta( property="og:type", content="website" )
@@ -62,11 +64,11 @@ html(lang='en' class= classes data-page= page )
 
     block content
     block footer
-      .footer.bg-darkgray
+      .footer.bg-darkurple
         .p-t-xs-1.p-b-xs-1
-          .container.dark-bg
-            .row
-              .col-xs-12.left-text-md.center-text-xs
+          .container
+            .row.center-xs
+              .col-xs-12
                 ul
                   li.small
                     a.type-gm(href='https://twitter.com/paulballas') Twitter
