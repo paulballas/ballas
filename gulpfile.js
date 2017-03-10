@@ -57,7 +57,7 @@ gulp.task('brand', function() {
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('production', ['public', 'brand', 'sass', 'develop', 'coffee']);
+gulp.task('production', ['public', 'brand', 'sass', 'coffee']);
 
 
 gulp.task('default', [
