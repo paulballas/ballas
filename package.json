@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "gulp default"
+    "postinstall": "gulp production"
   },
   "engines": {
     "node": "6.9.x"
