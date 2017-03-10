@@ -1,7 +1,6 @@
 express = require 'express'
 auth = require 'basic-auth'
 router = express.Router()
-loadingSpinner = require 'loading-spinner'
 
 router.get '/', (req, res) ->
   res.render 'home', { title: 'Home' }
