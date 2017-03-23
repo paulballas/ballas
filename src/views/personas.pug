@@ -1,0 +1,33 @@
+extends layout
+
+block settings
+  - var page = 'Personas'
+  - var classes = ['portfolio', 'dark']
+
+block content
+  .project
+    .bg-darkmagenta
+      .container.hero.pana-hero
+        .padify
+          .row
+            .col-xs-12
+              a(href='/portfolio' class='btn-default btn-lightmagenta m-b-xs-0') Back to portfolio
+          .row.middle-xs
+            .col-md-5.col-xs-12
+              h2.type-geb #{title}
+              p One of the favorite parts of UX design is interviewing and discovering an underlying user base. What types of peole are using this app? What are their existing behaviors?
+              
+              p After researching and interview, I typically create personas to give the entire team an understand of who we're building for. These not only shape conversations, but also features and business decisions.          
+            .col-md-7
+              .proj-deets
+                img.p-l-md-2.p-l-xs-0(src='/public/images/portfolio/personas_emma.png' alt='Persona')
+    //- agent
+    .bg-lightmagenta
+      .container.flicker
+        .padify
+          .row.middle-xs
+            .col-xs-12
+              .main-carousel            
+                img.carousel-cell(src='/public/images/portfolio/personas_james.png' alt='Persona')    
+                img.carousel-cell(src='/public/images/portfolio/personas_mark.png' alt='Persona')
+                img.carousel-cell(src='/public/images/portfolio/personas_emma.png' alt='Persona')

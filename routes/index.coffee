@@ -77,4 +77,13 @@ router.get '/portfolio/marigold', (req, res) ->
   else
     res.render 'marigold', { title: 'Marigold' }
 
+router.get '/portfolio/personas', (req, res) ->
+  credentials = auth(req)
+  if !credentials or credentials.name != 'paul' or credentials.pass != 'denver'
+    res.statusCode = 401
+    res.setHeader 'WWW-Authenticate', 'Basic realm="example"'
+    res.end 'Need the username and password? Email Paul at paul.ballas@gmail.com'
+  else
+    res.render 'personas', { title: 'Personas' }
+
 module.exports = router
