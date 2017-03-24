@@ -57,12 +57,19 @@ gulp.task('brand', function() {
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('production', ['public', 'brand', 'sass', 'coffee']);
+gulp.task('dist', function() {
+  gulp.src('./src/dist/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('production', ['public', 'brand', 'dist', 'sass', 'coffee']);
 
 
 gulp.task('default', [
   'public',
   'brand',
+  'dist',
   'sass',
   'develop',
   'coffee',
