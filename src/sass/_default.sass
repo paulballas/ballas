@@ -24,6 +24,8 @@
   background: $magenta
 .bg-darkmagenta
   background: $darkmagenta
+.bg-sherbert
+  background: $sherbert
 
 .btn-default,
 input[type=button],
@@ -56,6 +58,8 @@ input[type=submit]
   color: $aqua
 .type-white
   color: $white
+  &.super
+    color: $white !important
 .type-lightgray
   color: $lightgray
 .type-darkgray
@@ -70,12 +74,21 @@ input[type=submit]
   color: $magenta
 .type-darkmagenta
   color: $darkmagenta
+.type-darkmagenta-all
+  color: $darkmagenta
+  >
+    color: $darkmagenta
+  *
+    color: $darkmagenta
 
 .divider
   display: block
   width: 100%
   height: ms(-6)
   background: $lightblue
+  &.light
+    background: lighten($black, 30%)
+    height: ms(-8)
 
 .form-item
   input[type=text],
@@ -88,3 +101,14 @@ input[type=submit]
   textarea,
   select,
     color: $darkmagenta
+
+.line-through
+  text-decoration: line-through
+.pad-list
+  padding-left: ms(1)
+.img-full
+  width: 100%
+  height: auto
+.img-border
+  border: 1px solid darken($lightgray, 30%)
+  border-radius: 3px

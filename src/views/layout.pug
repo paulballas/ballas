@@ -51,12 +51,12 @@ html(lang='en' class= classes data-page= page )
   body
     block hero
       .header
-        .container
+        .container            
           .row.middle-xs
-            .col-md-6.col-xs-12.left-text-md.center-text-xs.m-b-xs-1.m-b-md-0
+            .col-md-4.col-xs-12.left-text-md.center-text-xs.m-b-xs-1.m-b-md-0
               a(href='/')
                 +logo
-            .col-md-6.col-xs-12
+            .col-md-8.col-xs-12
               ul
                 li
                   a.type-gm(href="/" class=(slug === 'home' ? 'active' : '')) Home
@@ -64,6 +64,8 @@ html(lang='en' class= classes data-page= page )
                   a.type-gm(href="/about" class=(slug === 'about' ? 'active' : '')) About
                 li
                   a.type-gm(href='/portfolio' class=(slug === 'portfolio' ? 'active' : '')) Portfolio
+                li
+                  a.type-gm(href='/design-process' class=(slug === 'process' ? 'active' : '')) Design Process
                 li
                   a.type-gm(href='/illustrations' class=(slug === 'illustrations' ? 'active' : '')) Illustrations
                 li
@@ -74,6 +76,10 @@ html(lang='en' class= classes data-page= page )
       .footer.bg-darkurple
         .p-t-xs-1.p-b-xs-1
           .container
+            .row.center-xs
+              p.small.type-gm.m-b-xs-0
+                | Personal website of 
+                b Paul Ballas      
             .row.center-xs
               .col-xs-12
                 ul

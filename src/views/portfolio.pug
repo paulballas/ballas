@@ -6,19 +6,24 @@ block settings
 
 block content
   - var projects = [{url:'pana',name:'Pana'},{url:'class',name:'ClassScout'}, {url:'ytb',name:'Your Texas Benefits'},{url:'hw',name:'HelloWallet'},{url:'abe',name:'ABE Mobile'},{url:'marigold',name:'Marigold'}, {url:'personas',name:'Personas'}]
-  .bg-darkurple
+  .bg-sherbert
     .container
-      .p-t-xs-4.p-t-xs-4
-      .row
-        .col-xs-12
-          h3 Portfolio
-          p I have had the privilege of working on many amazing projects, with amazing teams. I love what I do. Giving back to the design and tech community is important. Whether it's helping companies at 1776 or tutoring students at General Assembly.
-            br
-            br
-            | My work history includes web, mobile and responsive projects. The full range my of projects is not included below. This provides a small insight into my work. I would love to have a conversation about the full range of my portfolio.
+      .p-t-xs-2.p-b-xs-2
+        .row.center-xs
+          .col-xs-12
+            p.m-b-xs-0.type-black
+              | Curious about my design process? 
+              a(href='/design-process' class='type-black type-gs') Learn how I tackle design problems.     
   .bg-darkmagenta
     .container
-      .p-t-xs-4.p-t-xs-4
+      .p-t-xs-4.p-b-xs-4
+        .row
+          .col-xs-12
+            h3 Portfolio
+            p I have had the privilege of working on many amazing projects, with amazing teams. I love what I do. Giving back to the design and tech community is important. Whether it's helping companies at 1776 or teaching students at General Assembly.
+              br
+              br
+              | My work history includes web, mobile and responsive projects. The full range my of projects is not included below. This provides a small insight into my work. I would love to have a conversation about the full range of my portfolio.
         .row
           each project in projects
             - var url = project.url

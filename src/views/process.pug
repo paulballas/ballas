@@ -1,0 +1,129 @@
+extends layout
+
+block settings
+  - var page = 'Design Process'
+  - var classes = ['process', 'dark']
+
+block content
+  .bg-darkmagenta.process-border
+    .container
+      .p-t-xs-6.p-b-xs-6
+        .row
+          .col-xs-12
+            h2.m-b-xs-0 Design 
+              span.line-through process
+              |  framework.          
+            h3.type-geb Great products are not designed by accident.
+            p.m-b-xs-0 I'm frequently asked about my design process and the answer typically is 
+              span.type-geb it depends.
+            br
+            p.m-b-xs-0 Instead of a process with strict rules, I think more about it as a framework. There are general guidelines I follow, but I also know when to deviate and get creative—always maintaining a customer first mindset.
+            br
+            p If you compare my design framework to a code framework, there are multiple correlations:
+            ul
+              li Flexible framework with a set of guidelines to keep you on track.
+              li Easy to scale up or down, depending on the type of project.
+              li Assets that can be used as the situation or user needs dictate.
+              li Allows for creativity without breaking everything else.
+  .bg-urple.type-darkmagenta-all
+    .p-t-xs-4.p-b-xs-4
+      //- define the problem
+      .container.process-container
+        .row
+          .col-xs-12
+            h3.type-geb Define the problem.
+            p.type-gm It's hard to know where you're headed without clear understanding of what's broken.
+          .col-xs-12
+            h4.type-gs Questions to answer:
+          .col-md-6.col-xs-12
+            ul.pad-list
+              li What are the user needs?
+              li If the problem exists, how it is already being solved?
+          .col-md-6.col-xs-12
+            ul.pad-list
+              li What are demographics and characteristics of the user?
+              li What existing behaviors are you competing against?
+      //- Identify goals
+      .container.process-container
+        .row
+          .col-xs-12
+            h3.type-geb Identify goals.
+            p Identifying both the  
+              span.type-geb user's goals
+              |  and the 
+              span.type-geb business goals 
+              |  will help shape where the product should be headed. After performing research and talking to as many users as the project allows, personas are a handy tool to share with your team.
+        .row
+          .col-md-10.col-md-offset-1.col-xs-12
+            img.img-full(src='/public/images/portfolio/personas_james.png' data-action='zoom' data-original='/public/images/portfolio/personas_james.png' alt='Ideas')
+            .space-1
+            caption
+              a(href='/portfolio/personas') More examples of personas...
+        //- Generate ideas
+      .container.process-container
+        .row
+          .col-xs-12
+            h3.type-geb Generate ideas.
+            p After defining your problem start ideating around possible concepts. Sticky notes are my favorite for rapid ideating—they force an idea to be concise. After you've generated a bunch of ideas, stickies are easy to group together and consolidate or eliminate ideas.
+            p.type-gs A Great book on ideating best practices and initial sketches 
+             a.type-gs(href='http://www.gv.com/sprint/') Sprint, by Google Ventures
+        .row
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/process/idea-3.jpg' data-action='zoom' data-original='/public/images/process/idea-3.jpg' alt='Ideas')
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/process/idea-2.jpg' data-action='zoom' data-original='/public/images/process/idea-2.jpg' alt='Ideas')
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/process/idea-1.jpg' data-action='zoom' data-original='/public/images/process/idea-1.jpg' alt='Ideas')
+      //- sketch prototype repeat
+      .container.process-container
+        .row
+          .col-xs-12
+            h3.type-geb Sketch. Prototype. Repeat.
+            p Generate lo-fidelity ideas. I prefer to sketch first on either a whiteboard or pencil and paper. Rather concentrate on features, I focus on the flow and the user's journey from start to finish.
+        .row
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/process/sketch-3.jpg' data-action='zoom' data-original='/public/images/process/sketch-3.jpg' alt='Ideas')
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/process/sketch-2.jpg' data-action='zoom' data-original='/public/images/process/sketch-2.jpg' alt='Ideas')
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/process/sketch-1.jpg' data-action='zoom' data-original='/public/images/process/sketch-1.jpg' alt='Ideas')
+        .row
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/process/sketch-4.jpg' data-action='zoom' data-original='/public/images/process/sketch-4.jpg' alt='Ideas')
+          .col-md-8.col-xs-12
+            img.img-full(src='/public/images/process/sketch-5.jpg' data-action='zoom' data-original='/public/images/process/sketch-5.jpg' alt='Ideas')
+        .row
+          .col-xs-12
+            h4.type-geb Prototypes
+            p Ther are so many tools out there to prototype, and it doesn't really matter which one you use. As long as they are cheap, quick, and help validate your ideas.
+            p My favorite tool is 
+              span.type-geb InVision
+              | , which easily allows me to drop in my Sketch files and create a prototype in minutes. Click the button below to see a live example of two of my prototypes.
+            p 
+              a.btn-default.btn-large.btn-magenta.type-white.super(href='https://invis.io/J38MQ8JBG' target='_blank') View Prototypes
+      //- Create your model
+      .container.process-container
+        .row
+          .col-xs-12
+            h3.type-geb Create your model
+            p Think about what type of framework this will be built on? If it's a responsive design, you'll need to think about various states. If it's mobile, is it Android, iOS of a hybrid?
+            p It's also important to create or adhere to a project style guide to maintain a consistent hierarchy, typography, affordances, etc.
+        .row
+          .col-md-10.col-md-offset-1.col-xs-12
+            img.img-full.img-border(src='/public/images/process/style-guide.png' data-action='zoom' data-original='/public/images/process/style-guide.png' alt='Ideas')
+      //- start lo-fi and build
+      .container.process-container
+        .row
+          .col-xs-12
+            h3.type-geb Start with lo-fi and scale up as needed.
+            p Once you've made a decision on which concept to build, start with low-fidelity mockups and scale up as needed. Depending on my client/project I'll tailor my workflow accordingly.
+        .row
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/portfolio/itinerary-wire.png' alt='itinerary')
+            p.small.center-text-xs.type-magenta.type-gs Initial idea
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/portfolio/itinerary-wire2.png' alt='itinerary')
+            p.small.center-text-xs.type-magenta.type-gs A few iterations later
+          .col-md-4.col-xs-12
+            img.img-full(src='/public/images/portfolio/itinerary-final.png' alt='itinerary')
+            p.small.center-text-xs.type-magenta.type-gs Final product

@@ -23,6 +23,9 @@ router.get '/illustrations', (req, res) ->
 router.get '/contact', (req, res) ->
   res.render 'contact', { title: 'Contact' }
 
+router.get '/design-process', (req, res) ->
+  res.render 'process', { title: 'Design Process' }
+
 router.get '/portfolio/pana', (req, res) ->
   credentials = auth(req)
   if !credentials or credentials.name != 'paul' or credentials.pass != 'denver'
