@@ -17,7 +17,9 @@ block content
             p.m-b-xs-0 I'm frequently asked about my design process and the answer typically is 
               span.type-geb it depends.
             br
-            p.m-b-xs-0 Instead of a process with strict rules, I think more about it as a framework. There are general guidelines I follow, but I also know when to deviate and get creative—always maintaining a customer first mindset.
+            p.m-b-xs-0 Instead of a process with strict rules, I think more about it as a framework. There are general guidelines I follow, but I also know when to deviate and get creative—always maintaining a customer first mindset. 
+            br
+            p.type-geb Unlike a typical linear process, a framework allows for more flexibility when unexpected requirements or goals arise.
             br
             p If you compare my design framework to a code framework, there are multiple correlations:
             ul
@@ -25,13 +27,13 @@ block content
               li Easy to scale up or down, depending on the type of project.
               li Assets that can be used as the situation or user needs dictate.
               li Allows for creativity without breaking everything else.
-  .bg-urple.type-darkmagenta-all
+  .bg-lightgray.type-darkmagenta-all
     .p-t-xs-4.p-b-xs-4
       //- define the problem
       .container.process-container
         .row
           .col-xs-12
-            h3.type-geb Define the problem.
+            h2.type-geb Define the problem.
             p.type-gm It's hard to know where you're headed without clear understanding of what's broken.
           .col-xs-12
             h4.type-gs Questions to answer:
@@ -47,7 +49,7 @@ block content
       .container.process-container
         .row
           .col-xs-12
-            h3.type-geb Identify goals.
+            h2.type-geb Identify goals.
             p Identifying both the  
               span.type-geb user's goals
               |  and the 
@@ -63,7 +65,7 @@ block content
       .container.process-container
         .row
           .col-xs-12
-            h3.type-geb Generate ideas.
+            h2.type-geb Generate ideas.
             p After defining your problem start ideating around possible concepts. Sticky notes are my favorite for rapid ideating—they force an idea to be concise. After you've generated a bunch of ideas, stickies are easy to group together and consolidate or eliminate ideas.
             p.type-gs A Great book on ideating best practices and initial sketches 
              a.type-gs(href='http://www.gv.com/sprint/') Sprint, by Google Ventures
@@ -78,7 +80,7 @@ block content
       .container.process-container
         .row
           .col-xs-12
-            h3.type-geb Sketch. Prototype. Repeat.
+            h2.type-geb Sketch. Prototype. Repeat.
             p Generate lo-fidelity ideas. I prefer to sketch first on either a whiteboard or pencil and paper. Rather concentrate on features, I focus on the flow and the user's journey from start to finish.
         .row
           .col-md-4.col-xs-12
@@ -94,7 +96,7 @@ block content
             img.img-full(src='/public/images/process/sketch-5.jpg' data-action='zoom' data-original='/public/images/process/sketch-5.jpg' alt='Ideas')
         .row
           .col-xs-12
-            h4.type-geb Prototypes
+            h3.type-geb Prototypes
             p Ther are so many tools out there to prototype, and it doesn't really matter which one you use. As long as they are cheap, quick, and help validate your ideas.
             p My favorite tool is 
               span.type-geb InVision
@@ -105,8 +107,22 @@ block content
       .container.process-container
         .row
           .col-xs-12
-            h3.type-geb Create your model
+            h2.type-geb Create or work with a framework.
             p Think about what type of framework this will be built on? If it's a responsive design, you'll need to think about various states. If it's mobile, is it Android, iOS of a hybrid?
+        .row.middle-xs
+          .col-xs-12
+            p.type-geb My favorite and frequently used frameworks:
+          .col-md-3.col-xs-12
+            img.img-full(src='/public/images/process/angular.png' alt='angular')
+          .col-md-3.col-xs-12
+            img.img-full(src='/public/images/process/backbone.png' alt='angular')
+          .col-md-3.col-xs-12
+            img.img-full(src='/public/images/process/react.png' alt='angular')
+          .col-md-3.col-xs-12
+            img.img-full(src='/public/images/process/ember.png' alt='angular')
+        .space-2
+        .row
+          .col-xs-12  
             p It's also important to create or adhere to a project style guide to maintain a consistent hierarchy, typography, affordances, etc.
         .row
           .col-md-10.col-md-offset-1.col-xs-12
@@ -115,9 +131,9 @@ block content
       .container.process-container
         .row
           .col-xs-12
-            h3.type-geb Start with lo-fi and scale up as needed.
+            h2.type-geb Start with lo-fi and scale up as needed.
             p Once you've made a decision on which concept to build, start with low-fidelity mockups and scale up as needed. Depending on my client/project I'll tailor my workflow accordingly.
-        .row
+        .row.middle-xs
           .col-md-4.col-xs-12
             img.img-full(src='/public/images/portfolio/itinerary-wire.png' alt='itinerary')
             p.small.center-text-xs.type-magenta.type-gs Initial idea
@@ -127,3 +143,22 @@ block content
           .col-md-4.col-xs-12
             img.img-full(src='/public/images/portfolio/itinerary-final.png' alt='itinerary')
             p.small.center-text-xs.type-magenta.type-gs Final product
+    //- analyze
+    .container.process-container
+      .row
+        .col-xs-12
+          h2.type-geb Analyze and iterate.
+          p I'm not sure where I heard the expression "don't hate... iterate" but it perfectly sums up the next in the framework. Once a product has been launched it's important to track and evaluate the performance. Does it accomplish all of the original goals?
+      .row
+        .col-xs-12
+          p I typically rely on a 
+  //- 
+  .bg-sherbert
+    .container.process-container
+      .row
+        .col-xs-12
+          h2.type-darkmagenta.type-geb Want to see more?
+          p.type-darkmagenta I teach UX at General Assembly and go through my process from start to finish. Click through the slides to learn more.
+      .row.center-xs        
+        .col-xs-12  
+          iframe(src='//www.slideshare.net/slideshow/embed_code/key/4xzD9n6uLIMk9r', width='595', height='485', frameborder='0', marginwidth='0', marginheight='0', scrolling='no', style='border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;', allowfullscreen='')
