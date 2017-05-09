@@ -5,17 +5,14 @@ router = express.Router()
 router.get '/', (req, res) ->
   res.render 'home', { title: 'Home' }
 
-# router.get '/portfolio', (req, res) ->
-#   credentials = auth(req)
-#   if !credentials or credentials.name != 'paul' or credentials.pass != 'denver'
-#     res.statusCode = 401
-#     res.setHeader 'WWW-Authenticate', 'Basic realm="example"'
-#     res.end 'Need the username and password? Email Paul at paul.ballas@gmail.com'
-#   else
-#     res.render 'portfolio', { title: 'Portfolio' }
-
 router.get '/portfolio', (req, res) ->
-  res.render 'portfolio', { title: 'Portfolio' }
+  credentials = auth(req)
+  if !credentials or credentials.name != 'paul' or credentials.pass != 'denver'
+    res.statusCode = 401
+    res.setHeader 'WWW-Authenticate', 'Basic realm="example"'
+    res.end 'Need the username and password? Email Paul at paul.ballas@gmail.com'
+  else
+    res.render 'portfolio', { title: 'Portfolio' }
 
 router.get '/about', (req, res) ->
   res.render 'about', { title: 'About' }
